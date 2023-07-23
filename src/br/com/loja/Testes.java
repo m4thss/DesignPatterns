@@ -7,7 +7,7 @@ import br.com.loja.orcamento.Orcamento;
 
 import java.math.BigDecimal;
 
-public class Main {
+public class Testes {
     public static void main(String[] args) {
         Orcamento orcamento = new Orcamento(new BigDecimal("750"), 2);
         CalculadorDeImposto calculadora = new CalculadorDeImposto();
