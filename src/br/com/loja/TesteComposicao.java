@@ -2,6 +2,7 @@ package br.com.loja;
 
 import br.com.loja.orcamento.ItemOrcamento;
 import br.com.loja.orcamento.Orcamento;
+import br.com.loja.orcamento.OrcamentoProxy;
 
 import java.math.BigDecimal;
 
@@ -15,6 +16,11 @@ public class TesteComposicao {
         novo.adicionarItem(new ItemOrcamento(new BigDecimal("600")));
         novo.adicionarItem(antigo);
 
-        System.out.println(novo.getValor());
+        OrcamentoProxy proxy = new OrcamentoProxy(novo);
+
+        System.out.println(proxy.getValor());
+        System.out.println(proxy.getValor());
+
+        System.out.println(proxy.getValor());
     }
 }
