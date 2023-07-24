@@ -29,7 +29,7 @@ public class GeraPedido {
     }
 
     public void executa(){
-        Orcamento orcamento = new Orcamento(this.valorOrcamento, this.quantidadeItens);
+        Orcamento orcamento = new Orcamento();
         Pedido pedido = new Pedido(cliente, LocalDateTime.now(), orcamento);
 
         System.out.println("Gerando pedido...");
